@@ -20,6 +20,8 @@ hpc <- read.csv("exdata_data_household_power_consumption/household_power_consump
 
 hpc$Date <- as.Date(hpc$Date, format="%d/%m/%Y")
 
+
 #### Subsetting the data -----
 
+shpc <- subset(hpc, Date >= "2007-02-01" & Date <= "2007-02-02")
 
