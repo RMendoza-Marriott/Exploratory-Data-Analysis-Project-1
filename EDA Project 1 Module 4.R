@@ -25,3 +25,9 @@ hpc$Date <- as.Date(hpc$Date, format="%d/%m/%Y")
 
 shpc <- subset(hpc, Date >= "2007-02-01" & Date <= "2007-02-02")
 
+
+#### Changing date formats in the subset data ----
+
+
+datetime <- paste(as.Date(shpc$Date), shpc$Time)
+shpc$Datetime <- as.POSIXct(datetime)
