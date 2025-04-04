@@ -41,4 +41,17 @@ hist(shpc$Global_active_power, main="Global Active Power",
      xlab="Global Active Power (kilowatts)", ylab="Frequency", col="Red")
 
 
+### Generating plot 2 : Global Active Power (kilowatts) ----
+
+plot(shpc$Global_active_power~shpc$Datetime,type="l", ylab="Global Active Power (kilowatts)", xlab="")
+
+
+
+
+
+
+
+
+
+
 
